@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.attribution {
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+}
+
+@media (max-width: 1440px) {
+    main {
+        place-items: center;
+        width: 30%;
+    }
+
+    section.p1 {
+        background-color: hsl(10, 79%, 65%);
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 25px;
+        margin-bottom: 1rem;
+        border-radius: .8rem;
+    }
+
+    section.p1 .bal p {
+        margin-left: 0;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    section.p1 .bal h1 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .logo img {
+        width: 50%;
+        margin-top: 8px;
+        margin-left: 50px;
+    }
+
+    .chart-graph {
+        background-color: #fff;
+        display: flex;
+        height: 57vh;
+        justify-content: space-between;
+        padding: 8px 25px;
+        border-radius: .8rem;
+    }
+
+    .graph h2 {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    
+    #canvas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: .5rem;
+        width: 120%;
+        border-radius: 10px;
+    }
+
+    hr {
+        border-bottom: 1px solid hsl(0, 8%, 80%);
+        margin-top: 1rem;
+    }
+
+    /* .days {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 7rem;
+        margin-right: 9.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .days p {
+        font-size: 12px;
+        font-weight: 300;
+        color: rgb(155, 155, 155);
+    } */
+
+    .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.7rem;
+    }
+
+    .total p {
+        font-size: 10px;
+        font-weight: 700;
+        color: rgb(163, 162, 162);
+    }
+
+    .total h1 {
+        font-size: 28px;
+    }
+
+    .percent {
+        display: inline-block;
+        flex-direction: row;
+        margin-right: -3rem;
+    }
+
+    .percent h4 {
+        font-size: 12px;
+        font-weight: 800;
+        margin-right: 3rem;
+        margin-left: 3.8rem;
+    }
+
+    .percent p {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(163, 162, 162);
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width: 799px) {
+    main {
+        place-items: center;
+        width: 52%;
+    }
+
+    .logo img {
+        align-items: center;
+        width: 45%;
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+
+    .chart-graph {
+        height: 50vh;
+    }
+
+    /* .days {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 8rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+    } */
+
+    .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+
+    hr {
+        background-color: transparent;
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 414px) {
+    main {
+        place-items: center;
+        width: 50%;
+    }
+
+    .chart-graph {
+        background-color: #fff;
+        display: flex;
+        margin: 0;
+        height: 50vh;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: .8rem;
+    }
+
+    .graph h2 {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-left: 3rem; 
+    }
+
+    .days {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin-top: 8rem;
+        margin-right: -15px;
+        margin-left: 40px; 
+        margin-bottom: 1rem;
+        gap: 5px;
+    }
+
+    hr {
+        margin-left: 40px; 
+        width: 70%;
+    }
+
+    .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+    }
+
+    .total h1 {
+        font-size: 24px;
+    }
+
+    .percent {
+        margin-left: 25px;
+    }
+
+    .percent h4 {
+        margin-left: 25px;
+    }
+
+    .percent p {
+        font-size: 10px;
+        width: 80%;
+        margin-left: -10px;
+    }
+}

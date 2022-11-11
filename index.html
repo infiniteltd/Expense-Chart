@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- chart link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.css">
+
+
+    <!-- style link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Expenses Chart</title>
+</head>
+
+<body>
+    <main>
+        <section class="p1">
+            <div class="bal">
+                <p>My balance</p>
+                <h1>$921.48</h1>
+            </div>
+            <div class="logo">
+                <img src="/logo.svg" alt="">
+            </div>
+        </section>
+
+        <!-- chart -->
+        <section class="chart-graph">
+            <div class="graph">
+                <h2>Spending - Last 7 days</h2>
+                <canvas id="canvas"></canvas>
+                <hr>
+                <div class="foot">
+                    <div class="total">
+                        <p>Total this month</p>
+                        <h1>$478.33</h1>
+                    </div>
+                    <div class="percent">
+                        <h4>+2.4%</h4>
+                        <p>from last month</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">@infiniteltd</a>.
+    </div>
+
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
